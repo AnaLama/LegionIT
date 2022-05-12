@@ -3,6 +3,7 @@ package homeWork1;
 import static utils.Utils.*;
 
 public class Module2 {
+
     public static void main(String[] args) {
         String hello = "Hello";
         String name = "Anastasiia Lamakina";
@@ -19,6 +20,7 @@ public class Module2 {
         double j = 0.5;
         double k = 8.8;
         double result3 = g * h * i * j * k;
+
 // Write a Java program to print 'Hello' on the screen and then print your name on a separate line.
 //Expected Output :
 //Hello
