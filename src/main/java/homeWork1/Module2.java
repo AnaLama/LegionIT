@@ -39,17 +39,13 @@ public class Module2 {
         System.out.println(result2);
 
 // Write a java program with 5 decimal variables. Multiply all 5 of them and print results in the following format:
-//
 //number a * number b *.... equals <result>
 
         print(task3 +3);
         line(line);
         String n = " * number ";
+        String m = " * ";
         System.out.println("Number g" + n + "h" + n + "i" + n + "j" + n + "k equals " + String.format("%.4f",result3));
-
-
-
-
-
+        System.out.println(g + m + h + m + i + m + j + m + k + " equals " + String.format("%.4f",result3));
     }
 }
