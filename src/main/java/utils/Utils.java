@@ -28,4 +28,10 @@ public class Utils {
     public static void tabLine() {
         System.out.println("_________________________________________________________________________");
     }
+    public static boolean isStringValid (String a){
+        boolean flag = false;
+        if (a != null && a.length() != 0){
+           flag = true;
+        } return flag;
+    }
 }
