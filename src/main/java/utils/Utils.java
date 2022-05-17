@@ -15,6 +15,7 @@ public class Utils {
     public static String task = "\n" + ANSI_YELLOW + "Task # ";
     public static String task2 = "\n" + ANSI_BLUE + "Task #";
     public static String task3 = "\n" + ANSI_PURPLE + " Task #";
+    public static String task4 = "\n" + ANSI_CYAN + " Task #";
 
 
     public static void print(String task) {
@@ -29,9 +30,8 @@ public class Utils {
         System.out.println("_________________________________________________________________________");
     }
     public static boolean isStringValid (String a){
-        boolean flag = false;
-        if (a != null && a.length() != 0){
-           flag = true;
-        } return flag;
+                if (a != null && a.length() != 0){
+           return true;
+        } return false;
     }
 }
