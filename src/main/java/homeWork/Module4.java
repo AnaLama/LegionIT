@@ -63,13 +63,14 @@ public class Module4 {
 
     public String getFizzOrBuzz (String str){
         if (isStringValid(str)){
-            str = str.trim().toLowerCase();
-            if(str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b'){
-                str = "Fizz Buzz";
-            } else  if(str.charAt(0) == 'f'){
-                str = "Fizz";
-            } else if (str.charAt(str.length() - 1) == 'b'){
-                str = "Buzz";
+            String str1 = "";
+            str1 = str.trim().toLowerCase();
+            if(str1.charAt(0) == 'f' && str1.charAt(str1.length() - 1) == 'b'){
+                return "Fizz Buzz";
+            } else  if(str1.charAt(0) == 'f'){
+               return  "Fizz";
+            } else if (str1.charAt(str1.length() - 1) == 'b'){
+                return "Buzz";
             }
             return str;
         }
