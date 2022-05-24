@@ -1,9 +1,6 @@
 package homeWork;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 import static utils.Utils.*;
 
@@ -42,6 +39,7 @@ public class Module5 {
         toysName.put(56, "Junior QA Analyst Doll");
         return toysName.getOrDefault(id, "No such Toy");
     }
+
 // 3 The program should receive an ArrayList of Strings and print all the words with no duplicates.
 //for example: input [Steve, Tim, Lucy, Steve, Pat, Angela, Tom, Tim, Anna, Lucy]
 //output:[Steve, Tim, Lucy, Pat, Angela, Tom, Anna]
@@ -168,6 +166,21 @@ public class Module5 {
 
         System.out.println(mod5.getToysById(45));
         System.out.println(mod5.getToysById(1));
+
+        print(task + 2 + " optional");
+        line(line);
+        int count = 1;
+        while (count < 3) {
+            Scanner scanner = new Scanner(System.in);
+            // ask the question in console
+            System.out.print("Enter the Toy ID: ");
+            // get  input as a String
+            int id = Integer.parseInt(scanner.next());
+
+
+            System.out.println(mod5.getToysById(id));
+            count++;
+        }
 
         print(task + 3);
         line(line);
