@@ -139,6 +139,17 @@ public class Module5 {
         }
         return false;
     }
+// Task 7 better option
+    public boolean arrayFront91(int[] array) {
+        if (array != null && array.length != 0) {
+            for (int i = 0; i < array.length; i++) {
+                if (i < 4 && array[i] == 9) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 // 8 Given a list of integers, return a list where each integer is multiplied with itself.
 //square([1, 2, 3]) → [1, 4, 9]
 //square([6, 8, -6, -8, 1]) → [36, 64, 36, 64, 1]
@@ -239,6 +250,12 @@ public class Module5 {
         System.out.println(mod5.arrayFront9(array132)); // {1, 2, 3}
         int[] array7 = new int[]{2, 3, 50, 0, 9, 2, -1};
         System.out.println(mod5.arrayFront9(array7));
+
+        print(task3 + 7 + " better option");
+        line(line);
+        System.out.println(mod5.arrayFront91(array6));  // {2, 9, 50, 0, 9, 2, -1}
+        System.out.println(mod5.arrayFront91(array132)); // {1, 2, 3}
+        System.out.println(mod5.arrayFront91(array7));
 
         print(task3 + 8);
         line(line);
