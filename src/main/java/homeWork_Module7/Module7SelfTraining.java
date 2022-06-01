@@ -50,9 +50,11 @@ public class Module7SelfTraining {
     public static boolean isIdenticalLetter(String str) {
         if (isStringValid(str)) {
             str = str.trim().toLowerCase();
+            char [] arr = str.toCharArray();
+            Arrays.sort(arr);
             int count = 0;
-            for (int i = 1; i < str.length(); i++) {
-                if (str.charAt(i) == str.charAt(i - 1)) {
+            for (int i = 1; i < arr.length; i++) {
+                if (arr[i] == arr[i - 1]) {
                     count++;
                 }
             }
@@ -72,18 +74,18 @@ public class Module7SelfTraining {
 //calculateScores("ABC") ➞ [1, 1, 1]
 //calculateScores("ABCBACC") ➞ [2, 2, 3]
     public static int[] calculateScore(String str) {
-        if (isStringValid(str)) {
-            str = str.trim().toUpperCase();
+        if (isStringValid(str.trim())) {
+            str = str.toUpperCase();
             char[] arr = str.toCharArray();
             int countA = 0;
             int countB = 0;
             int countC = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] == 'A') {
+            for (char c : arr) {
+                if (c == 'A') {
                     countA++;
-                } else if (arr[i] == 'B') {
+                } else if (c == 'B') {
                     countB++;
-                } else if (arr[i] == 'C') {
+                } else if (c == 'C') {
                     countC++;
                 } else return new int[]{};
             }
